@@ -1,5 +1,16 @@
+h1 {
+  background-color: aquamarine;
+  margin: 2px;
+  border: black solid;
+  /* Inline block makes new block of display when the inline block is full  */
+  display: inline-block;
+}
+
 h2 {
   color: #0000ff;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: underline overline;
 }
 
 h4 {
@@ -8,4 +19,43 @@ h4 {
 
 html {
   background-color: rgb(255, 244, 244);
+}
+
+ul > p {
+  color: #5959ff;
+}
+
+/* Attribute selectors, you can learn about it on mozilla developer documentation */
+
+input[type="text"] {
+  color: darkred;
+  background-color: turquoise;
+}
+
+article p {
+  color: chocolate;
+}
+
+/* Pseudo classes */
+article p:nth-of-type(2n) {
+  color: blue;
+}
+
+article p::after {
+  content: "***";
+}
+
+section {
+  border-style: dashed solid inset;
+  border-color: #0000ff violet;
+  border-width: 20px;
+  padding: 5%;
+  margin: 50px;
+  background-color: aqua;
+}
+
+.parablock {
+  padding: 5%;
+  margin: 50px;
+  background-color: #0000ff;
 }
